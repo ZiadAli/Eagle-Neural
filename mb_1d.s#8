@@ -2722,6 +2722,85 @@ at 30/07/2012 11:04:18</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO41-7.6">
+<description>&lt;b&gt;DO41&lt;/b&gt; 7.6mm x 2mm&lt;p&gt;
+Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
+<wire x1="2.082" y1="-0.92" x2="-2.082" y2="-0.92" width="0.1524" layer="21"/>
+<wire x1="2.082" y1="-0.92" x2="2.082" y2="0.92" width="0.1524" layer="21"/>
+<wire x1="-2.082" y1="0.92" x2="2.082" y2="0.92" width="0.1524" layer="21"/>
+<wire x1="-2.082" y1="0.92" x2="-2.082" y2="-0.92" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0" x2="2.494" y2="0" width="0.85" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.519" y2="0" width="0.85" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="C" x="-3.81" y="0" drill="1.1" diameter="1.7"/>
+<pad name="A" x="3.81" y="0" drill="1.1" diameter="1.7"/>
+<text x="-2.032" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.032" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-0.95" x2="-1.143" y2="0.92" layer="21"/>
+<rectangle x1="2.082" y1="-0.425" x2="2.717" y2="0.425" layer="21"/>
+<rectangle x1="-2.717" y1="-0.425" x2="-2.082" y2="0.425" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N581*" prefix="D">
+<description>&lt;b&gt;1.0A SCHOTTKY BARRIER RECTIFIER&lt;/b&gt;&lt;p&gt;
+Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO41-7.6">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="7-B"/>
+<technology name="7-T"/>
+<technology name="8-B"/>
+<technology name="8-T"/>
+<technology name="9-B"/>
+<technology name="9-T"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2768,7 +2847,6 @@ at 30/07/2012 11:04:18</description>
 <part name="C4" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="&quot;" value="4.7uF"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L2" library="inductors" deviceset="CR32" device=""/>
-<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD123"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="4.7UF-16V-20%,+80%-(1206)" device="" value="1uF"/>
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD123"/>
 <part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD123"/>
@@ -2782,6 +2860,7 @@ at 30/07/2012 11:04:18</description>
 <part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="1k"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10M"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="130k"/>
+<part name="D7" library="diode" deviceset="1N581*" device="" technology="7-B"/>
 </parts>
 <sheets>
 <sheet>
@@ -2828,7 +2907,6 @@ at 30/07/2012 11:04:18</description>
 <instance part="C4" gate="G$1" x="-218.44" y="-44.45"/>
 <instance part="GND4" gate="1" x="-218.44" y="-62.23"/>
 <instance part="L2" gate="G$1" x="-184.15" y="-16.51"/>
-<instance part="D2" gate="G$1" x="-163.83" y="-16.51"/>
 <instance part="C6" gate="G$1" x="-157.48" y="-26.67"/>
 <instance part="D3" gate="G$1" x="-151.13" y="-16.51"/>
 <instance part="D4" gate="G$1" x="-140.97" y="-16.51"/>
@@ -2842,6 +2920,7 @@ at 30/07/2012 11:04:18</description>
 <instance part="R5" gate="G$1" x="-105.41" y="-16.51"/>
 <instance part="R10" gate="G$1" x="-88.9" y="-40.64" rot="R90"/>
 <instance part="R11" gate="G$1" x="-88.9" y="-52.07" rot="R90"/>
+<instance part="D7" gate="G$1" x="-163.83" y="-16.51"/>
 </instances>
 <busses>
 </busses>
@@ -3534,7 +3613,6 @@ at 30/07/2012 11:04:18</description>
 <wire x1="-170.18" y1="-16.51" x2="-170.18" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="U7" gate="A" pin="LX"/>
 <wire x1="-170.18" y1="-25.4" x2="-172.72" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="-170.18" y1="-16.51" x2="-166.37" y2="-16.51" width="0.1524" layer="91"/>
 <junction x="-170.18" y="-16.51"/>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -3543,17 +3621,18 @@ at 30/07/2012 11:04:18</description>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="-144.78" y1="-7.62" x2="-124.46" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-144.78" y="-7.62"/>
+<pinref part="D7" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-161.29" y1="-16.51" x2="-157.48" y2="-16.51" width="0.1524" layer="91"/>
 <wire x1="-157.48" y1="-16.51" x2="-157.48" y2="-21.59" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="-157.48" y1="-16.51" x2="-153.67" y2="-16.51" width="0.1524" layer="91"/>
 <junction x="-157.48" y="-16.51"/>
+<pinref part="D7" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$4" class="0">

@@ -1312,6 +1312,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.35" y1="-0.65" x2="0.35" y2="-0.05" layer="31"/>
 <rectangle x1="-0.35" y1="0.05" x2="0.35" y2="0.65" layer="31"/>
 </package>
+<package name="HEADER_5X2_SMD_1.27MM">
+<smd name="9" x="1.27" y="0" dx="0.74" dy="2.4" layer="1"/>
+<smd name="8" x="2.54" y="0" dx="0.74" dy="2.4" layer="1"/>
+<smd name="7" x="3.81" y="0" dx="0.74" dy="2.4" layer="1"/>
+<smd name="6" x="5.08" y="0" dx="0.74" dy="2.4" layer="1"/>
+<smd name="1" x="0" y="-3.9" dx="0.74" dy="2.4" layer="1"/>
+<smd name="2" x="1.27" y="-3.9" dx="0.74" dy="2.4" layer="1"/>
+<smd name="3" x="2.54" y="-3.9" dx="0.74" dy="2.4" layer="1"/>
+<smd name="4" x="3.81" y="-3.9" dx="0.74" dy="2.4" layer="1"/>
+<smd name="5" x="5.08" y="-3.9" dx="0.74" dy="2.4" layer="1"/>
+<smd name="10" x="0" y="0" dx="0.74" dy="2.4" layer="1"/>
+<text x="0" y="-6" size="0.8128" layer="21" rot="R90">1</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TPS61040">
@@ -1447,6 +1460,25 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="11.176" size="1.778" layer="95">&gt;Name</text>
 <text x="-7.62" y="-12.7" size="1.778" layer="95">&gt;Value</text>
+</symbol>
+<symbol name="HEADER_5X2_SMD">
+<pin name="P1" x="-7.62" y="6.35" length="short"/>
+<pin name="P2" x="-7.62" y="3.81" length="short"/>
+<pin name="P3" x="-7.62" y="1.27" length="short"/>
+<pin name="P4" x="-7.62" y="-1.27" length="short"/>
+<pin name="P5" x="-7.62" y="-3.81" length="short"/>
+<pin name="P6" x="7.62" y="-3.81" length="short" rot="R180"/>
+<pin name="P7" x="7.62" y="-1.27" length="short" rot="R180"/>
+<pin name="P8" x="7.62" y="1.27" length="short" rot="R180"/>
+<pin name="P9" x="7.62" y="3.81" length="short" rot="R180"/>
+<pin name="P10" x="7.62" y="6.35" length="short" rot="R180"/>
+<wire x1="-5.08" y1="8.89" x2="-5.08" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-6.35" x2="5.08" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-6.35" x2="5.08" y2="8.89" width="0.254" layer="94"/>
+<wire x1="5.08" y1="8.89" x2="-5.08" y2="8.89" width="0.254" layer="94"/>
+<circle x="-3.81" y="7.62" radius="0.508" width="0.254" layer="97"/>
+<text x="-5.08" y="8.89" size="1.27" layer="95">&gt;Name</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1616,6 +1648,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="U1" pin="SCLK" pad="5"/>
 <connect gate="U1" pin="VDD" pad="6"/>
 <connect gate="U1" pin="W" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HEADER_5X2_SMD_1.27MM" prefix="U">
+<gates>
+<gate name="U1" symbol="HEADER_5X2_SMD" x="0" y="-1.27"/>
+</gates>
+<devices>
+<device name="" package="HEADER_5X2_SMD_1.27MM">
+<connects>
+<connect gate="U1" pin="P1" pad="1"/>
+<connect gate="U1" pin="P10" pad="10"/>
+<connect gate="U1" pin="P2" pad="2"/>
+<connect gate="U1" pin="P3" pad="3"/>
+<connect gate="U1" pin="P4" pad="4"/>
+<connect gate="U1" pin="P5" pad="5"/>
+<connect gate="U1" pin="P6" pad="6"/>
+<connect gate="U1" pin="P7" pad="7"/>
+<connect gate="U1" pin="P8" pad="8"/>
+<connect gate="U1" pin="P9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4994,6 +5050,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="500k"/>
 <part name="U8" library="ck" deviceset="MAX5394" device=""/>
 <part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="50k"/>
+<part name="U9" library="ck" deviceset="HEADER_5X2_SMD_1.27MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5061,6 +5118,7 @@ http://www.zetex.com&lt;p&gt;
 <instance part="R7" gate="G$1" x="-140.97" y="-33.02" rot="R90"/>
 <instance part="U8" gate="U1" x="-95.25" y="-35.56"/>
 <instance part="R13" gate="G$1" x="-80.01" y="-49.53" rot="R90"/>
+<instance part="U9" gate="U1" x="29.21" y="-64.77"/>
 </instances>
 <busses>
 </busses>
@@ -5268,6 +5326,11 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="-80.01" y1="-54.61" x2="-80.01" y2="-60.96" width="0.1524" layer="91"/>
 <label x="-80.01" y="-59.69" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U9" gate="U1" pin="P1"/>
+<wire x1="21.59" y1="-58.42" x2="13.97" y2="-58.42" width="0.1524" layer="91"/>
+<label x="13.97" y="-58.42" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -5358,6 +5421,11 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="U8" gate="U1" pin="VDD"/>
 <wire x1="-105.41" y1="-27.94" x2="-114.3" y2="-27.94" width="0.1524" layer="91"/>
 <label x="-113.03" y="-27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="U1" pin="P7"/>
+<wire x1="36.83" y1="-66.04" x2="45.72" y2="-66.04" width="0.1524" layer="91"/>
+<label x="40.64" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -5548,6 +5616,11 @@ http://www.zetex.com&lt;p&gt;
 <label x="161.29" y="7.62" size="1.778" layer="95"/>
 <pinref part="CON2" gate="CON1" pin="P$41"/>
 </segment>
+<segment>
+<pinref part="U9" gate="U1" pin="P2"/>
+<wire x1="21.59" y1="-60.96" x2="13.97" y2="-60.96" width="0.1524" layer="91"/>
+<label x="10.16" y="-60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RSTB_M" class="0">
 <segment>
@@ -5682,6 +5755,11 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="U5" gate="G$1" pin="!RESET!"/>
 <wire x1="90.17" y1="-62.23" x2="83.82" y2="-62.23" width="0.1524" layer="91"/>
 <label x="83.82" y="-62.23" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="U1" pin="P8"/>
+<wire x1="36.83" y1="-63.5" x2="45.72" y2="-63.5" width="0.1524" layer="91"/>
+<label x="40.64" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FACTORY" class="0">
@@ -5930,12 +6008,22 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="24.13" y1="25.4" x2="15.24" y2="25.4" width="0.1524" layer="91"/>
 <label x="12.7" y="25.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="P0.07"/>
+<wire x1="125.73" y1="-107.95" x2="125.73" y2="-114.3" width="0.1524" layer="91"/>
+<label x="125.73" y="-119.38" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="SS_POT2" class="0">
 <segment>
 <pinref part="U2" gate="U1" pin="!CS"/>
 <wire x1="-224.79" y1="-36.83" x2="-233.68" y2="-36.83" width="0.1524" layer="91"/>
 <label x="-237.49" y="-36.83" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="P0.10"/>
+<wire x1="128.27" y1="-107.95" x2="128.27" y2="-114.3" width="0.1524" layer="91"/>
+<label x="128.27" y="-119.38" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6008,6 +6096,11 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="-105.41" y1="-33.02" x2="-114.3" y2="-33.02" width="0.1524" layer="91"/>
 <label x="-118.11" y="-33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="P0.13"/>
+<wire x1="130.81" y1="-107.95" x2="130.81" y2="-114.3" width="0.1524" layer="91"/>
+<label x="130.81" y="-119.38" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="MOSI_LS" class="0">
 <segment>
@@ -6029,6 +6122,30 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="U4" gate="U1" pin="3Y"/>
 <wire x1="16.51" y1="-97.79" x2="6.35" y2="-97.79" width="0.1524" layer="91"/>
 <label x="6.35" y="-97.79" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AIN2" class="0">
+<segment>
+<pinref part="U9" gate="U1" pin="P10"/>
+<wire x1="36.83" y1="-58.42" x2="45.72" y2="-58.42" width="0.1524" layer="91"/>
+<label x="41.91" y="-58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="P0.01/AIN2"/>
+<wire x1="118.11" y1="-107.95" x2="118.11" y2="-114.3" width="0.1524" layer="91"/>
+<label x="118.11" y="-114.3" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="AREF0" class="0">
+<segment>
+<pinref part="U9" gate="U1" pin="P9"/>
+<wire x1="36.83" y1="-60.96" x2="45.72" y2="-60.96" width="0.1524" layer="91"/>
+<label x="40.64" y="-60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="P0.00/AREF0"/>
+<wire x1="123.19" y1="-107.95" x2="123.19" y2="-114.3" width="0.1524" layer="91"/>
+<label x="123.19" y="-114.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
