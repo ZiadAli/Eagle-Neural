@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5517,9 +5517,9 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="CON2" gate="CON1" pin="P$48"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.28"/>
-<wire x1="153.67" y1="-67.31" x2="162.56" y2="-67.31" width="0.1524" layer="91"/>
-<label x="154.94" y="-67.31" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="P0.29"/>
+<wire x1="153.67" y1="-64.77" x2="162.56" y2="-64.77" width="0.1524" layer="91"/>
+<label x="154.94" y="-64.77" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5639,14 +5639,14 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="CON2" gate="CON1" pin="P$50"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.30"/>
-<wire x1="153.67" y1="-62.23" x2="162.56" y2="-62.23" width="0.1524" layer="91"/>
-<label x="154.94" y="-62.23" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U9" gate="U1" pin="P3"/>
 <wire x1="115.57" y1="10.16" x2="107.95" y2="10.16" width="0.1524" layer="91"/>
 <label x="105.41" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="P0.25"/>
+<wire x1="153.67" y1="-69.85" x2="162.56" y2="-69.85" width="0.1524" layer="91"/>
+<label x="154.94" y="-69.85" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="REF_CLK_BUF" class="0">
@@ -5736,9 +5736,9 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="CON2" gate="CON1" pin="P$49"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.29"/>
-<wire x1="153.67" y1="-64.77" x2="162.56" y2="-64.77" width="0.1524" layer="91"/>
-<label x="154.94" y="-64.77" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="P0.28"/>
+<wire x1="153.67" y1="-67.31" x2="162.56" y2="-67.31" width="0.1524" layer="91"/>
+<label x="154.94" y="-67.31" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DLL_START_M" class="0">
@@ -5818,11 +5818,6 @@ http://www.zetex.com&lt;p&gt;
 <label x="101.6" y="-13.97" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.25"/>
-<wire x1="153.67" y1="-69.85" x2="162.56" y2="-69.85" width="0.1524" layer="91"/>
-<label x="154.94" y="-69.85" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U8" gate="U1" pin="SCLK"/>
 <wire x1="-105.41" y1="-38.1" x2="-114.3" y2="-38.1" width="0.1524" layer="91"/>
 <label x="-114.3" y="-38.1" size="1.778" layer="95"/>
@@ -5836,6 +5831,11 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="U2" gate="U1" pin="SCLK"/>
 <wire x1="-224.79" y1="-41.91" x2="-233.68" y2="-41.91" width="0.1524" layer="91"/>
 <label x="-233.68" y="-41.91" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="P0.30"/>
+<wire x1="153.67" y1="-62.23" x2="162.56" y2="-62.23" width="0.1524" layer="91"/>
+<label x="154.94" y="-62.23" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HVDC" class="0">

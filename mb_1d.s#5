@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4898,6 +4898,20 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <text x="-2.4344" y="5.49" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-2.4344" y="-1.495" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="LQH3NPN470MJRL">
+<smd name="1" x="0" y="0" dx="2.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="2.2" y="0" dx="2.7" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-0.45" y1="1.35" x2="-0.45" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="-0.45" y1="-1.4" x2="2.65" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="2.65" y1="-1.4" x2="2.65" y2="1.4" width="0.127" layer="51"/>
+<wire x1="2.65" y1="1.4" x2="-0.45" y2="1.4" width="0.127" layer="51"/>
+<wire x1="-0.45" y1="1.4" x2="-0.45" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-0.45" y1="-1.4" x2="2.65" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.65" y1="-1.4" x2="2.65" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.65" y1="1.4" x2="-0.45" y2="1.4" width="0.127" layer="21"/>
+<text x="-2" y="1.75" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.3" y="-3.15" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LT3014">
@@ -4912,6 +4926,16 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <wire x1="8.89" y1="6.35" x2="-3.81" y2="6.35" width="0.254" layer="94"/>
 <text x="-2.54" y="8.89" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="LQH3NPN470MJRL">
+<pin name="1" x="-12.7" y="0" length="middle"/>
+<pin name="2" x="12.7" y="0" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4928,6 +4952,25 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="4"/>
 <connect gate="G$1" pin="SHDN" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LQH3NPN470MJRL" uservalue="yes">
+<description>Package 1212 (3030)
+
+Inductor LQH3NPN470MJRL</description>
+<gates>
+<gate name="G$1" symbol="LQH3NPN470MJRL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LQH3NPN470MJRL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5026,7 +5069,6 @@ http://www.zetex.com&lt;p&gt;
 <part name="U7" library="Maxim_By_element14_Batch_1" deviceset="MAX5026EUT+T" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="&quot;" value="4.7uF"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="L2" library="inductors" deviceset="CR32" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="4.7UF-16V-20%,+80%-(1206)" device="" value="1uF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402-16V-10%" value="0.1uF"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402-16V-10%" value="0.1uF"/>
@@ -5073,6 +5115,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="50k"/>
 <part name="U9" library="ck" deviceset="HEADER_5X2_SMD_1.27MM" device=""/>
 <part name="C17" library="SparkFun-Capacitors" deviceset="470NF" device="-0402-16V-10%" value="470nF"/>
+<part name="U$2" library="Personal" deviceset="LQH3NPN470MJRL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5095,7 +5138,6 @@ http://www.zetex.com&lt;p&gt;
 <instance part="U7" gate="A" x="-180.34" y="16.51"/>
 <instance part="C4" gate="G$1" x="-208.28" y="2.54"/>
 <instance part="GND4" gate="1" x="-208.28" y="-15.24"/>
-<instance part="L2" gate="G$1" x="-173.99" y="30.48"/>
 <instance part="C6" gate="G$1" x="-147.32" y="20.32"/>
 <instance part="C7" gate="G$1" x="-134.62" y="34.29"/>
 <instance part="C9" gate="G$1" x="-114.3" y="34.29"/>
@@ -5142,6 +5184,7 @@ http://www.zetex.com&lt;p&gt;
 <instance part="R13" gate="G$1" x="-80.01" y="-49.53" rot="R90"/>
 <instance part="U9" gate="U1" x="123.19" y="8.89"/>
 <instance part="C17" gate="G$1" x="-7.62" y="35.56"/>
+<instance part="U$2" gate="G$1" x="-177.8" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -5397,15 +5440,13 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="-204.47" y1="30.48" x2="-208.28" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-208.28" y1="30.48" x2="-208.28" y2="21.59" width="0.1524" layer="91"/>
 <junction x="-208.28" y="21.59"/>
-<wire x1="-204.47" y1="30.48" x2="-181.61" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-204.47" y="30.48"/>
 <label x="-208.28" y="30.48" size="1.778" layer="95"/>
 <pinref part="U7" gate="A" pin="VCC"/>
 <junction x="-198.12" y="21.59"/>
 <pinref part="U7" gate="A" pin="~SHDN"/>
-<pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="-181.61" y1="30.48" x2="-180.34" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-181.61" y="30.48"/>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="-190.5" y1="30.48" x2="-204.47" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-204.47" y="30.48"/>
 </segment>
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
@@ -5834,8 +5875,6 @@ http://www.zetex.com&lt;p&gt;
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="-166.37" y1="30.48" x2="-160.02" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-160.02" y1="30.48" x2="-160.02" y2="21.59" width="0.1524" layer="91"/>
 <pinref part="U7" gate="A" pin="LX"/>
 <wire x1="-160.02" y1="21.59" x2="-162.56" y2="21.59" width="0.1524" layer="91"/>
@@ -5848,6 +5887,8 @@ http://www.zetex.com&lt;p&gt;
 <junction x="-134.62" y="39.37"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="-157.48" y1="30.48" x2="-160.02" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="-165.1" y1="30.48" x2="-160.02" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">

@@ -5601,9 +5601,9 @@ http://www.zetex.com&lt;p&gt;
 <label x="105.41" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.09"/>
-<wire x1="90.17" y1="-87.63" x2="83.82" y2="-87.63" width="0.1524" layer="91"/>
-<label x="81.28" y="-87.63" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="P0.11"/>
+<wire x1="90.17" y1="-85.09" x2="83.82" y2="-85.09" width="0.1524" layer="91"/>
+<label x="80.01" y="-85.09" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCTRL_NOV" class="0">
@@ -5724,9 +5724,9 @@ http://www.zetex.com&lt;p&gt;
 <label x="161.29" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.11"/>
-<wire x1="90.17" y1="-85.09" x2="83.82" y2="-85.09" width="0.1524" layer="91"/>
-<label x="80.01" y="-85.09" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="P0.09"/>
+<wire x1="90.17" y1="-87.63" x2="83.82" y2="-87.63" width="0.1524" layer="91"/>
+<label x="81.28" y="-87.63" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMODE_M" class="0">
