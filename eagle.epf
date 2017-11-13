@@ -242,6 +242,7 @@ UsedLibrary="/Applications/EAGLE-7.4.0/lbr/national-semiconductor.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/nec-lqfp100-pack.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/nec.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/nrj-semiconductor.lbr"
+UsedLibrary="/Applications/EAGLE-7.4.0/lbr/nxp_60.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/omnivision.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/on-semiconductor.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/opto-honeywell-3000.lbr"
@@ -385,7 +386,7 @@ UsedLibrary="/Users/Ziad/Downloads/SparkFun-Eagle-Libraries-master/User-Submitte
 
 [Win_1]
 Type="Control Panel"
-Loc="709 211 1308 610"
+Loc="0 23 981 555"
 State=2
 Number=0
 
