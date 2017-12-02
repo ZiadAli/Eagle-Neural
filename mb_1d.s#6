@@ -6064,9 +6064,8 @@ http://www.zetex.com&lt;p&gt;
 <label x="12.7" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.16"/>
-<wire x1="90.17" y1="-77.47" x2="83.82" y2="-77.47" width="0.1524" layer="91"/>
-<label x="80.01" y="-77.47" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="DNC@10"/>
+<wire x1="90.17" y1="-67.31" x2="83.82" y2="-67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SS_POT2" class="0">

@@ -4869,8 +4869,8 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <symbols>
 <symbol name="LT3014">
 <pin name="IN" x="-8.89" y="3.81" length="middle"/>
-<pin name="SHDN" x="-8.89" y="-2.54" length="middle"/>
-<pin name="GND" x="-8.89" y="-8.89" length="middle"/>
+<pin name="GND" x="-8.89" y="-2.54" length="middle"/>
+<pin name="SHDN" x="-8.89" y="-8.89" length="middle"/>
 <pin name="OUT" x="13.97" y="1.27" length="middle" rot="R180"/>
 <pin name="ADJ" x="13.97" y="-6.35" length="middle" rot="R180"/>
 <wire x1="-3.81" y1="6.35" x2="-3.81" y2="-11.43" width="0.254" layer="94"/>
@@ -4928,10 +4928,10 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <devices>
 <device name="" package="LT3014">
 <connects>
-<connect gate="G$1" pin="ADJ" pad="5"/>
+<connect gate="G$1" pin="ADJ" pad="4"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
 <connect gate="G$1" pin="SHDN" pad="3"/>
 </connects>
 <technologies>
@@ -5289,7 +5289,7 @@ SC70 Package</description>
 <label x="-199.39" y="-63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="SHDN"/>
 <wire x1="-43.18" y1="16.51" x2="-57.15" y2="16.51" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <label x="-49.53" y="16.51" size="1.778" layer="95"/>
@@ -5863,7 +5863,7 @@ SC70 Package</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN"/>
 <wire x1="-43.18" y1="29.21" x2="-45.72" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SHDN"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="-43.18" y1="22.86" x2="-45.72" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="22.86" x2="-45.72" y2="29.21" width="0.1524" layer="91"/>
 <junction x="-45.72" y="29.21"/>

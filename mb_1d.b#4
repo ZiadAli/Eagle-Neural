@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="3" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1831,11 +1831,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="74.3712" y1="51.7398" x2="74.676" y2="51.435" width="0.1524" layer="1"/>
 <wire x1="73.914" y1="51.5112" x2="72.5424" y2="51.5112" width="0.1524" layer="16"/>
 <wire x1="74.3712" y1="51.7398" x2="74.3712" y2="51.816" width="0.1524" layer="1"/>
-<wire x1="74.3712" y1="51.816" x2="74.2188" y2="51.9684" width="0.1524" layer="1"/>
-<wire x1="74.2188" y1="51.9684" x2="74.1426" y2="51.9684" width="0.1524" layer="1"/>
-<via x="74.1426" y="51.9684" extent="1-16" drill="0.254" diameter="0.381"/>
-<wire x1="74.1426" y1="51.9684" x2="74.1426" y2="51.7398" width="0.1524" layer="16"/>
-<wire x1="74.1426" y1="51.7398" x2="73.914" y2="51.5112" width="0.1524" layer="16"/>
+<wire x1="74.3712" y1="51.816" x2="74.3458" y2="51.816" width="0.1524" layer="1"/>
+<wire x1="74.3458" y1="51.816" x2="74.1934" y2="51.9684" width="0.1524" layer="1"/>
+<via x="74.1934" y="51.9684" extent="1-16" drill="0.254" diameter="0.381"/>
+<wire x1="74.1934" y1="51.9684" x2="74.1934" y2="51.7906" width="0.1524" layer="16"/>
+<wire x1="74.1934" y1="51.7906" x2="73.914" y2="51.5112" width="0.1524" layer="16"/>
 </signal>
 <signal name="HVDC">
 <contactref element="CON2" pad="32"/>
@@ -2343,8 +2343,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="3,1,cf76cd74cd74cf76"/>
 <approved hash="4,1,e8d55e615cd82142"/>
 <approved hash="4,1,17e2692f680bda18"/>
-<approved hash="4,1,3282d840ab9dac70"/>
 <approved hash="4,1,9f849d3dec8e04e8"/>
+<approved hash="4,1,3282d840ab9dac70"/>
 </errors>
 </board>
 </drawing>

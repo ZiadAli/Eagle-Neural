@@ -5537,9 +5537,9 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="CON2" gate="CON1" pin="P$48"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.21"/>
-<wire x1="153.67" y1="-74.93" x2="162.56" y2="-74.93" width="0.1524" layer="91"/>
-<label x="154.94" y="-74.93" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="P0.28"/>
+<wire x1="153.67" y1="-67.31" x2="162.56" y2="-67.31" width="0.1524" layer="91"/>
+<label x="154.94" y="-67.31" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5657,9 +5657,9 @@ http://www.zetex.com&lt;p&gt;
 <label x="105.41" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.25"/>
-<wire x1="153.67" y1="-69.85" x2="162.56" y2="-69.85" width="0.1524" layer="91"/>
-<label x="154.94" y="-69.85" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="P0.22"/>
+<wire x1="153.67" y1="-72.39" x2="162.56" y2="-72.39" width="0.1524" layer="91"/>
+<label x="154.94" y="-72.39" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="REF_CLK_BUF" class="0">
@@ -5749,9 +5749,9 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="CON2" gate="CON1" pin="P$49"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.22"/>
-<wire x1="153.67" y1="-72.39" x2="162.56" y2="-72.39" width="0.1524" layer="91"/>
-<label x="154.94" y="-72.39" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="P0.25"/>
+<wire x1="153.67" y1="-69.85" x2="162.56" y2="-69.85" width="0.1524" layer="91"/>
+<label x="154.94" y="-69.85" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DLL_START_M" class="0">
@@ -6234,9 +6234,9 @@ http://www.zetex.com&lt;p&gt;
 <label x="-233.68" y="-39.37" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="P0.28"/>
-<wire x1="153.67" y1="-67.31" x2="162.56" y2="-67.31" width="0.1524" layer="91"/>
-<label x="154.94" y="-67.31" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="P0.21"/>
+<wire x1="153.67" y1="-74.93" x2="162.56" y2="-74.93" width="0.1524" layer="91"/>
+<label x="154.94" y="-74.93" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
